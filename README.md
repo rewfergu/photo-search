@@ -2,6 +2,8 @@
 
 A photo search application written in Python, based on opencv and the flask web framework.
 
+![static/img/screenshot.png](static/img/screenshot.png)
+
 When my son was born, I started to get more interested in my family history. I started collecting family photographs in an effort to put together a visual record of our family. I quickly found out that I didn't know a lot about any of the photos, and they weren't very useful without some background information. So as I collected the background information I started entering it into a spreadsheet.
 
 Basically I wanted:
