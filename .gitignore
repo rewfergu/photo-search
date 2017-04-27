@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+temp.png
+img/*.jpeg
+.vscode/
+.DS_Store
