@@ -78,6 +78,10 @@ h1.appTitle {
   text-align: center;
   box-shadow: 0px 0px 50px #513168;
   border-radius: 50%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
+  animation-timing-function: linear;
 }
 
 #cameraIcon {
@@ -123,11 +127,14 @@ h1.appTitle {
 
 .close {
   background: black;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  /*position: relative;*/
+  /*top: 20px;*/
+  /*right: 20px;*/
   color: white;
   border: none;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 .closeIcon {
@@ -141,14 +148,15 @@ h1.appTitle {
 }
 
 .imageTitle {
+  font-size: 1.5em;
   text-align: left;
   margin-bottom: 0.5rem;
 }
 
 .imageDescription {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  /*border: 1px solid rgba(255, 255, 255, 0.1);*/
+  /*padding: 1rem;*/
+  /*background: rgba(255, 255, 255, 0.1);*/
 }
 
 canvas {
@@ -169,7 +177,7 @@ canvas {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   flex-wrap: wrap;
   align-content: center;
 }
@@ -203,4 +211,16 @@ canvas {
 
 .st1 {
   fill: #635662;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
