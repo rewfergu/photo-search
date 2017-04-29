@@ -5,18 +5,23 @@
   font-style: normal;
 }
 
-html {
+body {
   min-height: 100vh;
   background-color: #3c1338;
   background: linear-gradient(135deg, #8275d6 0%, #3c1338 100%);
-  background-size: cover;
-}
-
-body {
   font-size: 100%;
   font-family: 'quicksandbold', sans-serif;
   color: #fff;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 main {
@@ -61,7 +66,7 @@ h1.appTitle {
   justify-content: center;
   align-items: center;*/
   display: inline-block;
-  /*background: #ffad92;*/
+  background: #fff;
   color: #513168;
   width: 60px;
   height: 60px;
@@ -100,7 +105,7 @@ h1.appTitle {
   top: 100vh;
   min-height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
   padding: 20px;
   box-sizing: border-box;
   transition: top 0.63s ease;
@@ -148,7 +153,7 @@ h1.appTitle {
 
 canvas {
   position: absolute;
-  left: 200vw;
+  top: -200vh;
 }
 
 .loadingWindow {

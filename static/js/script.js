@@ -3,7 +3,7 @@ const photoField = document.getElementById('photo');
 // const photoSearch = document.getElementById('photoSearchForm');
 
 const image = document.getElementById('imageFile');
-const imageTitle = document.getElementById('imageTitle');
+const image_title = document.getElementById('imageTitle');
 const imageDesc = document.getElementById('imageDescription');
 const loading = document.getElementById('loadingWindow');
 
@@ -80,8 +80,8 @@ photoField.addEventListener('change', () => {
       }
 
       if (response.title) {
-        imageTitle.innerHTML = response.title;
-        imageTitle.classList.remove('hidden');
+        image_title.innerHTML = response.title;
+        image_title.classList.remove('hidden');
       }
 
       if (response.date && response.date !== 'date') {

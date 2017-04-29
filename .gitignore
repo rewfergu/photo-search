@@ -92,3 +92,4 @@ FamilyPhotos_test.csv
 static/img/*.jpeg
 .vscode/
 .DS_Store
+.eslintrc.json
